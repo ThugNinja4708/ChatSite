@@ -4,9 +4,9 @@
     $msg = $_POST['msg'];
     $ID = $_SESSION['username'];
     
-    $sql="select * from userdetails where (name='$Fname');";
+    $sql="select ID from userdetails where (name='$Fname');";
     $res1=mysqli_query($conn,$sql);
-    $sql="select * from userdetails where (name='$ID');";
+    $sql="select ID from userdetails where (name='$ID');";
     $res2=mysqli_query($conn,$sql);
     
     if (mysqli_num_rows($res2) > 0) {
@@ -20,9 +20,6 @@
             $iquery = mysqli_query($conn,$sql);
             if(!$iquery){
                 echo "not inserted !!";
-            }
-            else{
-                echo "inserted !!";
             }
     }
     else{

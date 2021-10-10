@@ -1,13 +1,22 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
 :root {
-  --color1: rgba(245, 56, 85, 1);
+  --color1: #4a7cea;
 }
 body{
-  letter-spacing:1px;
+  letter-spacing: 1px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 30px;
-  margin: 0px;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color:#9AA7A9;
 }
-.everything{
+.header{
+  padding: 20px;
+  background-color: #cfc5c5;
+  border: 5px solid none;
+  border-radius: 20px;
+}
+.everything{ /* used in index.html */
   position: absolute;
   left: 40%
 }
@@ -24,10 +33,18 @@ input,textarea,button{
 input:focus,textarea:focus {
   border: 4px solid var(--color1);
 }
+i{
+  position:absolute;
+  margin-left: -27px;
+  margin-top: 23px;
+}
+button[type="submit"]{
+color:white;
+background-color: var(--color1);
+}
 button:hover {
-    background-color: var(--color1);
     font-size: 20px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 label{
 font-size: 30px;
@@ -40,32 +57,47 @@ ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
-ul li{
-  display: inline-block;
-}
-ul li a:hover{
-     background:var(--color1);
- }
+  display: flex;
+  justify-content:space-between;
 
+}
+.left{
+  position:absolute;
+  top: 22%;
+  background-color: #5c6064;
+  border-radius: 20px;
+  
+}
+.inner_form{
+  padding:20px;
+
+}
+.logoutButton{
+  color: white;
+  background-color: black;
+  border: 2px solid;
+  border-radius: 10px;
+  width: 130px;
+  height: 55px;
+}
+.logoutButton:hover {
+    letter-spacing: 1.5px;
+}
 .message{
   position: absolute;
   width: 49%;
-  height: 500px;
-  top:15%;
-  left:50%;
+  height: 550px;
+  top:23%;
+  left:49%;
   padding-bottom: 50px;
-  border: 5px solid black;
+  border: 3px solid black;
+  border-radius: 20px;
   font-size: 20px;
-  background-color: rgb(165, 224, 178);
+  background-color: #15191C;
   overflow-y: scroll;
   
 }
-.header{
-  padding: 15px; 
-  background-color: rgb(0, 0, 0);
-  color: white;
-}
+
 hr{
   border: 2px solid var(--color1);
   background-color: var(--color1);
@@ -75,20 +107,33 @@ hr{
 
 .inner-container1{
   background-color: rgb(182, 182, 162);
+  border-radius: 0px 20px 20px 20px;
+  margin-left: 10px;
   
 }
 .inner-container2{
-  background-color: rgb(117, 114, 110);
-  margin-left: 500px;
+  margin-left: 490px;
+  border-radius: 20px 0px 20px 20px;
 }
 
 .inner-container1,.inner-container2{
+  background-color: #2d3740;
   display: inline-block;
   width: fit-content;
-  max-width: 225px;
+  max-width: 220px;
   word-wrap: break-word;
   height: auto;
-  border: 2px solid rgb(124, 6, 6);
+  padding: 15px;
+  color: white;
+}
+.message::-webkit-scrollbar{
+  width: 10px;
+}
+.message::-webkit-scrollbar-track {
+  background-color: #2d3740;
+}
+.message::-webkit-scrollbar-thumb{
+  background: white;
   border-radius: 10px;
-  margin-top: 8px;
+  height: 10px;
 }

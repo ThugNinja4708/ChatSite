@@ -2,7 +2,7 @@
             include "DB_Conn.php";
             session_start();
             $ID = $_SESSION['username'];                              //RETRIEVAL
-            $sql="select * from userdetails where (name='$ID');";
+            $sql="select ID from userdetails where (name='$ID');";
             $res2=mysqli_query($conn,$sql);
             if (mysqli_num_rows($res2) > 0) {
               $ID = mysqli_fetch_array($res2)['ID'];
@@ -22,14 +22,14 @@
                   if($row['SenderID'] == $ID){
                     echo'   <div class="container">
                               <div class="inner-container2">
-                                <p style="font-weight: 1000;"> '."$row2[Name]". '</p>
+                                <p style="font-weight: 1000;"> '.ucfirst($row2['Name']). '</p>
                                 <p>'." $row[Messages]".' </p> 
                             </div> </div><br>';
                   }
                   else{
                     echo'<div class="container">
                           <div class="inner-container1">
-                            <p style="font-weight: 1000;"> '."$row2[Name]". '</p>
+                            <p style="font-weight: 1000;"> '.ucfirst($row2['Name']). '</p>
                             <p>'." $row[Messages]".' </p> 
                          </div> </div><br>';
                 }

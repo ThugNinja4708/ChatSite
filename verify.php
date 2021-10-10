@@ -13,15 +13,14 @@ $password = $_POST['pass'];
             $pass_check = password_verify($password,$row['password']);
 
             if($username == $row['Name'] && $pass_check){
-                echo "login sucessfull !!";
                 $_SESSION['username'] = $username;
-                header("Refresh:3; url=home.php");
+                header("Refresh:0.5; url=home.php");
             }
             else{
                 echo "Unauthorised login attempt!! "."<br>";
                 echo " OR <br>";
                 echo "You need to register first!!"."<br>" ;
-                header("Refresh:5; url=index.html");
+                header("Refresh:3; url=index.html");
             }
     }
 ?>

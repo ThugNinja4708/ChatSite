@@ -52,12 +52,12 @@ if (isset($_POST['send'])) {
         <table>
           <tr>
             <td><label>Friends Name :</label></td>
-            <td><input type="text" name="Fname" placeholder="To..?" style="border-radius:25px; width: 500px;"><i class="fas fa-search"></i></td>
+            <td><input type="text" name="Fname" placeholder="To..?" style="border-radius:25px; width: 500px;background-color:gray"><i class="fas fa-search"></i></td>
           </tr>
 
           <tr>
             <td><label>Your Message : </label></td>
-            <td><textarea name="msg" id="msg" style="border-radius:25px; width: 500px; height: 400px;" placeholder="Enter your message here"></textarea></td>
+            <td><textarea name="msg" id="msg" style="border-radius:25px; width: 500px; height: 300px; background-color:gray;" placeholder="Enter your message here"></textarea></td>
           </tr>
         </table>
         <button type="submit" name="send" style="transform:translate(320px);border-radius:25px;width:120px;font-weight:500;">Send</button>

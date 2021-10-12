@@ -149,3 +149,6 @@ hr{
   border-radius: 10px;
   height: 10px;
 }
+::placeholder{
+  color: aliceblue;
+}

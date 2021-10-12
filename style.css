@@ -9,6 +9,7 @@ body{
   margin-left: 2%;
   margin-right: 2%;
   background-color:#9AA7A9;
+  
 }
 .header{
   padding: 20px;
@@ -57,9 +58,18 @@ ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+.status{
+  background-color:white;
+  height:80px;
+  border-radius: 20px 20px 0px 0px;
+  padding: 10px; display:flex;
+  justify-content:left;
+}
+.status li {
+  padding-right: 20px;
   display: flex;
-  justify-content:space-between;
-
+  align-content: center;
 }
 .left{
   position:absolute;
@@ -89,13 +99,15 @@ ul{
   height: 550px;
   top:23%;
   left:49%;
+
   padding-bottom: 50px;
+  padding-left: 20px;
+  padding-top: 10px;
   border: 3px solid black;
   border-radius: 20px;
   font-size: 20px;
   background-color: #15191C;
   overflow-y: scroll;
-  
 }
 
 hr{

@@ -34,7 +34,7 @@ if (isset($_POST['send'])) {
 
   <header class="header">
     <ul style="display: flex;justify-content:space-between;">
-      <li><a href="home.php"><img src="logo.png" width="305" height="75"></a></li>
+      <li><a href="home.php"><img src="logo.png" width="250px" height="70px"></a></li>
       <li><button onclick="document.location='logout.php'" class="logoutButton"> Logout</button></li>
     </ul>
 
@@ -52,7 +52,7 @@ if (isset($_POST['send'])) {
         <table>
           <tr>
             <td><label>Friends Name :</label></td>
-            <td><input type="text" name="Fname" placeholder="To..?" style="border-radius:25px; width: 500px;background-color:gray"><i class="fas fa-search"></i></td>
+            <td><input type="text" name="Fname"id="Fname" placeholder="To..?" style="border-radius:25px; width: 500px;background-color:gray"><i class="fas fa-search"></i></td>
           </tr>
 
           <tr>
@@ -60,7 +60,7 @@ if (isset($_POST['send'])) {
             <td><textarea name="msg" id="msg" style="border-radius:25px; width: 500px; height: 300px; background-color:gray;" placeholder="Enter your message here"></textarea></td>
           </tr>
         </table>
-        <button type="submit" name="send" style="transform:translate(320px);border-radius:25px;width:120px;font-weight:500;">Send</button>
+        <button type="submit" name="send" style="border-radius:25px;width:150px; height:50px;font-weight:bold;">Send</button>
       </form>
     </div>
   </div>

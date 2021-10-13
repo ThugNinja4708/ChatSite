@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: #24c3cf">
+<html lang="en" style="background-color: #479CA9">
 
 <head>
   <link rel="stylesheet" href="style.css">
@@ -8,36 +8,34 @@
 
 <body>
   <div class="everything">
-    <header style="left: 100px;"><a href="home.php"><img src="logo.png" alt="logo" width="200px" height="50px"></a>
+    <header class="Center"><a href="home.php"><img src="logo.png" alt="logo" width="250px" height="75px"></a>
     </header>
 
     <form method="POST" action="verify.php">
-      <table style="align-items: center;">
+
+    
+      <table class="Center">
         <tr>
-          <td style="padding-bottom: 5px;"><b style="font-size: 30px;">Login</b></td>
+          <td style="padding-bottom: 5px;"><b style="font-size: 30px; color:#fdfdfe">Login</b></td>
         </tr>
         <tr>
-          <td>
-            <hr>
-          </td>
+          <td><input type="text" placeholder="Your Name.." name="username" required></td>
         </tr>
-
-        <tr>
-          <td><input style="text-align: center;" type="text" placeholder="Your Name.." name="username" required></td>
-        </tr>
-
-
         <tr>
           <td><input type="password" placeholder="Enter Password" name="pass" required></td>
         </tr>
-
         <tr>
-          <td><button type="submit" value="Login">Login</button></td>
+          <td><button type="submit" value="Login" >Login</button></td>
         </tr>
-      </table>
+        </table>
     </form>
-    <hr>
-    New to the Circle? <a href="registration.html"><button> Create Account</button></a>
+
+        <table>
+          <tr>
+            <td style="padding-bottom: 5px;font-size: 25px; color:#fdfdfe"><b>New to the Circle? <a href="registration.html"><button style="background-color: #04aeee;color:white; font-weight:bold; width:200px;"> Create Account</button></a></b></td>
+          </tr>
+        </table>
+  
   </div>
 </body>
 

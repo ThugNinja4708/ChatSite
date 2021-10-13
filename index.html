@@ -1,29 +1,44 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: #a9c8fd;">
+<html lang="en" style="background-color: #24c3cf">
+
 <head>
   <link rel="stylesheet" href="style.css">
-    <title>Login Page</title>
+  <title>Login Page</title>
 </head>
+
 <body>
-  <div class ="everything">
-    <header><a href="home.php"><img src="logo.png" alt="logo" width="200px" height="100px"></a></header>
+  <div class="everything">
+    <header style="left: 100px;"><a href="home.php"><img src="logo.png" alt="logo" width="200px" height="50px"></a>
+    </header>
 
     <form method="POST" action="verify.php">
-        <table>
-        <tr><td style="padding-bottom: 5px;"><b style="font-size: 50px;">Login</b></td></tr>
-        <tr><td><hr></td></tr>
+      <table style="align-items: center;">
+        <tr>
+          <td style="padding-bottom: 5px;"><b style="font-size: 30px;">Login</b></td>
+        </tr>
+        <tr>
+          <td>
+            <hr>
+          </td>
+        </tr>
 
-        <tr><td><label><b>User Name</b></label></td></tr>
-        <tr><td><input type="text" placeholder="Your Name.." name = "username" required></td></tr>
+        <tr>
+          <td><input style="text-align: center;" type="text" placeholder="Your Name.." name="username" required></td>
+        </tr>
 
-        <tr><td><label><b>Password</b></label></td></tr>
-        <tr><td><input type="password" placeholder="Enter Password"  name = "pass" required></td></tr>
 
-        <tr><td><button type="submit" value="Login">Login</button></td></tr>
-    </table>
+        <tr>
+          <td><input type="password" placeholder="Enter Password" name="pass" required></td>
+        </tr>
+
+        <tr>
+          <td><button type="submit" value="Login">Login</button></td>
+        </tr>
+      </table>
     </form>
     <hr>
     New to the Circle? <a href="registration.html"><button> Create Account</button></a>
-    </div>
+  </div>
 </body>
+
 </html>

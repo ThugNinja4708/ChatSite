@@ -6,17 +6,18 @@ body{
   letter-spacing: 1px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 30px;
-  margin-left: 2%;
-  margin-right: 2%;
-  background-color:#9AA7A9;
+
   
 }
 .header{
   padding: 20px;
   background-color: #cfcccc;
-  border: 5px solid none;
   border-radius: 20px;
   height: 70px;
+}
+.header ul{
+  display: flex;
+  justify-content:space-between;
 }
 .everything{ /* used in index.html */
   background-color:  #9e9b9b;
@@ -168,4 +169,16 @@ hr{
 .Center{
   display: flex;
   justify-content: center;
+}
+.temp{
+  border-radius:25px; 
+  width: 500px;
+  background-color:gray;
+  color:white;
+}
+.buttonSend{
+  border-radius:25px;
+  width:150px; 
+  height:50px;
+  font-weight:bold;
 }

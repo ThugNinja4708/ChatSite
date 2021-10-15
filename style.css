@@ -151,6 +151,7 @@ hr{
   height: auto;
   padding: 15px;
   color: white;
+  cursor: pointer;
 }
 .message::-webkit-scrollbar{
   width: 10px;

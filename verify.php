@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "DB_Conn.php";
+include "./DB_Conn.php";
 $username = $_POST['username'];
 $password = $_POST['pass'];
 
@@ -17,10 +17,10 @@ $password = $_POST['pass'];
                 header("Refresh:0.5; url=home.php");
             }
             else{
-                echo "Unauthorised login attempt!! "."<br>";
-                echo " OR <br>";
-                echo "You need to register first!!"."<br>" ;
-                header("Refresh:3; url=index.html");
+        header("Refresh:0; url=index.php");
+                    echo '<script src="JavaScript.js"> console.log("HI");
+    document.getElementsById("username").setAttribute("style","background-color:red;");</script>';
+                    
             }
     }
 ?>

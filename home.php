@@ -3,7 +3,7 @@ include "DB_Conn.php";
 session_start();
 if (!isset($_SESSION['username'])) {
   echo "login first";
-  header("Refresh:1; url=index.html");
+  header("Refresh:1; url=index.php");
 }
 if (isset($_POST['send'])) {
   include "Send.php";
@@ -52,15 +52,15 @@ if (isset($_POST['send'])) {
         <table>
           <tr>
             <td><label>Friends Name :</label></td>
-            <td><input type="text" name="Fname" id="Fname" placeholder="To..?" class="temp"><i class="fas fa-search"></i></td>
+            <td><input type="text" name="Fname" id="Fname" placeholder="To..?" class="temp" required><i class="fas fa-search"></i></td>
           </tr>
 
           <tr>
             <td><label>Your Message : </label></td>
-            <td><textarea name="msg" id="msg" class="temp" style="height: 300px;" placeholder="Enter your message here"></textarea></td>
+            <td><textarea name="msg" id="msg" class="temp" style="height: 300px;" placeholder="Enter your message here" required></textarea></td>
           </tr>
         </table>
-        <button type="submit" name="send" class="buttonSend">Send</button>
+        <div style="display: flex;justify-content:flex-end;"><button type="submit" name="send" class="buttonSend">Send</button></div>
       </form>
     </div>
   </div>

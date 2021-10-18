@@ -75,7 +75,7 @@ ul{
   padding: 0;
 }
 .status{
-  background-color:white;
+  background-color:rgb(232, 241, 252);
   height:80px;
   border-radius: 20px 20px 0px 0px;
   padding: 10px; 
@@ -164,7 +164,8 @@ hr{
   border-radius: 10px;
   height: 10px;
 }
-#Fname::placeholder ,#msg::placeholder{ 
+#Fname::placeholder ,#msg::placeholder{
+  
   color: white;
 }
 .Center{
@@ -174,7 +175,7 @@ hr{
 .temp{
   border-radius:25px; 
   width: 500px;
-  background-color:gray;
+  background-color:rgba(150, 146, 146, 0.349);
   color:white;
 }
 .buttonSend{

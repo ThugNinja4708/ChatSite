@@ -1,5 +1,5 @@
 <?php
-            include "DB_Conn.php";
+            include "./DB_Conn.php";
             session_start();
             $ID = $_SESSION['username'];                              //RETRIEVAL
             $sql="select ID from userdetails where (name='$ID');";

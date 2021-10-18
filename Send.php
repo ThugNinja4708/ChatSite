@@ -23,6 +23,6 @@
             }
     }
     else{
-        echo "Friend details not found !!";
+        echo '<script> alert("Friends details not found!!");</script>';
     }
 ?>

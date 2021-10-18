@@ -52,7 +52,7 @@ if (isset($_POST['send'])) {
         <table>
           <tr>
             <td><label>Friends Name :</label></td>
-            <td><input type="text" name="Fname" id="Fname" placeholder="To..?" class="temp" required><i class="fas fa-search"></i></td>
+            <td ><input type="text" name="Fname" id="Fname" placeholder="To..?" class="temp" required><i class="fas fa-search"></i></td>
           </tr>
 
           <tr>

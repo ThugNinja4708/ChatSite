@@ -6,11 +6,9 @@ body{
   letter-spacing: 1px;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 30px;
-
-  
 }
 .header{
-  padding: 20px;
+  padding: 10px;
   background-color: #cfcccc;
   border-radius: 20px;
   height: 70px;
@@ -75,7 +73,7 @@ ul{
   padding: 0;
 }
 .status{
-  background-color:rgb(232, 241, 252);
+  background-color:white;
   height:80px;
   border-radius: 20px 20px 0px 0px;
   padding: 10px; 
@@ -90,7 +88,7 @@ ul{
   top: 18%;
   background-color: #5b5d61;
   border-radius: 20px;
-  
+  height:auto;
 }
 .inner_form{
   padding:20px;
@@ -112,8 +110,7 @@ ul{
   width: 51.5%;
   height: 550px;
   top:18%;
-  left:45%;
-
+  left:48%;
   padding-bottom: 50px;
   padding-left: 20px;
   padding-top: 10px;
@@ -138,7 +135,7 @@ hr{
   
 }
 .inner-container2{
-  margin-left: 600px;
+  margin-left: 500px;
   border-radius: 20px 0px 20px 20px;
 }
 
@@ -164,8 +161,7 @@ hr{
   border-radius: 10px;
   height: 10px;
 }
-#Fname::placeholder ,#msg::placeholder{
-  
+#Fname::placeholder ,#msg::placeholder{ 
   color: white;
 }
 .Center{
@@ -174,10 +170,11 @@ hr{
 }
 .temp{
   border-radius:25px; 
-  width: 500px;
-  background-color:rgba(150, 146, 146, 0.349);
+  width: 420px;
+  background-color:rgb(0, 0, 0);
   color:white;
 }
+
 .buttonSend{
   border-radius:25px;
   width:150px; 

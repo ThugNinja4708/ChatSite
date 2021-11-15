@@ -1,5 +1,5 @@
 <?php
-include "./Db_Conn.php";
+include "Db_Conn.php";
 $username = $_POST['username'];
 $password = $_POST['pass'];
 $password = password_hash($password,PASSWORD_BCRYPT);
@@ -8,8 +8,7 @@ $password = password_hash($password,PASSWORD_BCRYPT);
     $sql="select * from userdetails where (name='$username');";
     $res=mysqli_query($conn,$sql);
     if (mysqli_num_rows($res) > 0) {
-        echo "This user is already Registerd !!";
-        header("Refresh:3; url=index.php");
+        echo'<script>localStorage["registered"]="yes";</script>';
         
     }
    else{ 
@@ -17,11 +16,12 @@ $password = password_hash($password,PASSWORD_BCRYPT);
        $iquery = mysqli_query($conn,$sql);
         if(!$iquery){
             echo "Not inserted !!!";
-            header("Refresh:3; url=index.php");
+            header("Refresh:3; url=index.html");
         }
         else{
             echo "Inserted correctly !!! hurray";
-            header("Refresh:3; url=index.php");
+            header("Refresh:3; url=index.html");
+            echo'<script>localStorage["registered"]="no";</script>';
         }
 }
 ?>

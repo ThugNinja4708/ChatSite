@@ -4,9 +4,9 @@
     $msg = $_POST['msg'];
     $ID = $_SESSION['username'];
     
-    $sql="select ID from userdetails where (name='$Fname');";
+    $sql="select * from userdetails where (name='$Fname');";
     $res1=mysqli_query($conn,$sql);
-    $sql="select ID from userdetails where (name='$ID');";
+    $sql="select * from userdetails where (name='$ID');";
     $res2=mysqli_query($conn,$sql);
     
     if (mysqli_num_rows($res2) > 0) {
@@ -21,8 +21,9 @@
             if(!$iquery){
                 echo "not inserted !!";
             }
+            
     }
     else{
-        echo '<script> alert("Friends details not found!!");</script>';
+        echo "Friend details not found !!";
     }
 ?>

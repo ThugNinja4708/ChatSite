@@ -1,14 +1,14 @@
 
 <?php
-echo' hi jnaklcska
-<script>var x=document.getElementById("gg");
-x.innerText="HI BRO";</script>';
 
-echo'<html>
+echo '<html>
 <body>
-    <p id="gg">grvdsg</p>
+    <p class="gg">grvdsg</p>
+<script>
+alert("hi");
+var x=document.getElementsByClassName("gg");
+x[0].innerText="HI BRO";</script>
 </body>
-
 </html>
 ';
 ?>

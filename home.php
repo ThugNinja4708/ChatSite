@@ -3,7 +3,7 @@ include "DB_Conn.php";
 session_start();
 if (!isset($_SESSION['username'])) {
   echo "login first";
-  header("Refresh:1; url=index.html");
+  header("Refresh:2; url=index.php");
 }
 if (isset($_POST['send'])) {
   include "Send.php";
@@ -34,10 +34,9 @@ if (isset($_POST['send'])) {
 
   <header class="header">
     <ul>
-      <li><a href="home.php"><img src="logo.png" width="250px" height="70px"></a></li>
+      <li><a href="home.php"><img src="logo.png" width="240px" height="65px"></a></li>
       <li><button onclick="document.location='logout.php'" class="logoutButton"> Logout</button></li>
     </ul>
-
   </header>
 
   <!-- Left Side of the page-->
@@ -54,10 +53,9 @@ if (isset($_POST['send'])) {
             <td><label>Friends Name :</label></td>
             <td><input type="text" name="Fname" id="Fname" placeholder="To..?" class="temp"><i class="fas fa-search"></i></td>
           </tr>
-
           <tr>
             <td><label>Your Message : </label></td>
-            <td><textarea name="msg" id="msg" class="temp" style="height: 300px;" placeholder="Enter your message here"></textarea></td>
+            <td><textarea name="msg" id="msg" class="temp" style="height: 200px;" placeholder="Enter your message here"></textarea></td>
           </tr>
         </table>
         <button type="submit" name="send" class="buttonSend">Send</button>
@@ -69,8 +67,5 @@ if (isset($_POST['send'])) {
   <div id="div_refresh" class="message">
 
   </div>
-
-
 </body>
-
 </html>

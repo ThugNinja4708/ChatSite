@@ -17,10 +17,14 @@ $password = $_POST['pass'];
                 header("Refresh:0.5; url=home.php");
             }
             else{
-                echo "Unauthorised login attempt!! "."<br>";
-                echo " OR <br>";
-                echo "You need to register first!!"."<br>" ;
-                header("Refresh:3; url=index.html");
+                echo "<script src = 'JavaScript.js'>
+                </script>
+                <script>
+                change();
+                </script>
+                ";
+                
+                header("Refresh:3; url=index.php");
             }
     }
 ?>

@@ -23,10 +23,10 @@
           <td style="padding-bottom: 1%;"><b style="font-size: 25px; color:#fdfdfe">Login</b></td>
         </tr>
         <tr>
-          <td><input id="username" type="text" placeholder="Your Name.." name="username" class="username" required></td>
+          <td><input id="username" type="text" placeholder="Your Name.." name="username" required></td>
         </tr>
         <tr>
-          <td><input type="password" placeholder="Enter Password" name="pass" class="password" required></td>
+          <td><input type="password" placeholder="Enter Password" name="pass" required></td>
         </tr>
         <tr>
           <td><button type="submit" value="Login" name="login">Login</button></td>
@@ -42,5 +42,16 @@
 
   </div>
 </body>
-
+  <?php
+  if($_GET){
+  if ($_GET['flag'] == false) {
+      echo'<script src = "JavaScript.js">
+      </script>
+      <script>
+      change();
+      </script>
+      ';
+  }
+}
+  ?>
 </html>

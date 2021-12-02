@@ -1,9 +1,9 @@
 <?php
 
-    $Fname = $_POST['Fname'];
+    $Fname = preg_replace('/\s+/', '', $_POST['Fname']);
     $msg = $_POST['msg'];
     $ID = $_SESSION['username'];
-    
+    if($msg != ""){
     $sql="select * from userdetails where (name='$Fname');";
     $res1=mysqli_query($conn,$sql);
     $sql="select * from userdetails where (name='$ID');";
@@ -26,4 +26,8 @@
     else{
         echo "Friend details not found !!";
     }
+}
+else{
+    echo "Message cant be empty!";
+}
 ?>

@@ -1,10 +1,15 @@
 
-function Copy(id){
-var a = document.getElementById(id).innerHTML;
-document.getElementById("Fname").value = a;
+function Copy(c){
+var a = document.getElementsByClassName("msg")[c].innerHTML;
+    if (a.includes("Reply to"))
+        a = a.substr(9);
+    if(a.includes('From '))
+        a = a.substr(5);
+    document.getElementById("Fname").value = a;
 }
 function change(){
-    alert("somya");
-    var x = document.getElementsByClassName("username");
-    x[0].setAttribute("style", "background-color: red;");  
+    var x = document.getElementsByName("username");
+    x[0].setAttribute("style", "background-color: rgb(192, 28, 28);");
+    x = document.getElementsByName("pass");
+    x[0].setAttribute("style", "background-color: rgb(192, 28, 28);");
 }

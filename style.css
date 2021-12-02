@@ -12,6 +12,7 @@ body{
   background-color: #cfcccc;
   border-radius: 20px;
   height: auto;
+  background-color: #dad9d9;
 }
 .header ul{
   display: flex;

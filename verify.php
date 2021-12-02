@@ -14,17 +14,10 @@ $password = $_POST['pass'];
 
             if($username == $row['Name'] && $pass_check){
                 $_SESSION['username'] = $username;
-                header("Refresh:0.5; url=home.php");
+                header("Refresh:0; url=home.php? flag = true");
             }
             else{
-                echo "<script src = 'JavaScript.js'>
-                </script>
-                <script>
-                change();
-                </script>
-                ";
-                
-                header("Refresh:3; url=index.php");
+                header("Refresh:0; url=index.php?flag = false");
             }
     }
 ?>

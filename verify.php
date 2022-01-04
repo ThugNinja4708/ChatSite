@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 include "DB_Conn.php";
 $username = $_POST['username'];
 $password = $_POST['pass'];
@@ -13,11 +13,14 @@ $password = $_POST['pass'];
             $pass_check = password_verify($password,$row['password']);
 
             if($username == $row['Name'] && $pass_check){
+                session_start();
                 $_SESSION['username'] = $username;
-                header("Refresh:0; url=home.php? flag = true");
+                $fl = True;
+                header("Location: home.php?flag=$fl");
             }
             else{
-                header("Refresh:0; url=index.php?flag = false");
+                $fl = False;
+                header("Location: index.php?flag=$fl");
             }
     }
 ?>

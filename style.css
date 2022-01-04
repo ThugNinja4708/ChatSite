@@ -18,11 +18,11 @@ body{
   display: flex;
   justify-content:space-between;
 }
-.everything{ /* used in index.html */
+.everything{ /* used in index.php and registration.php */
   background-color:  #9e9b9b;
-  position: absolute;
+  /*position: absolute;
   left: 30%;
-  top:15%;
+  top:15%;*/
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   padding: 40px;
   border-radius: 25px;

@@ -7,9 +7,7 @@
       if (mysqli_num_rows($res2) > 0) {
         $ID = mysqli_fetch_array($res2)['ID'];
       }
-          
-      $sql = "SELECT * FROM usermsg WHERE (RecvID ='$ID' or SenderID = '$ID') ;";
-                                                      //retrives the messages which where sent to him
+      $sql = "SELECT * FROM usermsg WHERE (RecvID ='$ID' or SenderID = '$ID') ;";//retrives the messages which where sent to him
       $res = mysqli_query($conn,$sql);
       $resultCheck = mysqli_num_rows($res);
       echo '<link rel="stylesheet" href="style.css" type="text/css">

@@ -1,9 +1,16 @@
 <?php
 include "DB_Conn.php";
+
 session_start();
+$username = $_SESSION['username'];
 if (!isset($_SESSION['username'])) {
   echo "login first";
   header("Refresh:2; url=index.php");
+}
+$sql = "select profilePic from userdetails where (name='$username');";
+$res = mysqli_query($conn,  $sql);
+if (mysqli_num_rows($res) > 0) {
+  $image = mysqli_fetch_array($res);
 }
 if (isset($_POST['send'])) {
   include "Send.php";
@@ -42,8 +49,9 @@ if (isset($_POST['send'])) {
   <!-- Left Side of the page-->
   <div class="left">
     <ul class="status">
-      <li><img src="avatar.jpg" width="75px" height="75px"></li>
-      <li><?php echo '<p><b>' . ucfirst($_SESSION['username']) . '</b></p>' ?></li>
+
+      <li><img src="uploads/<?=$image['profilePic'] ?>" width="75px" height="75px" alt="profilePic" /></li>
+      <li><?php echo '<p><b>' . ucfirst($username) . '</b></p>' ?></li>
     </ul>
     <div class="inner_form">
       <form method="POST">
@@ -68,4 +76,5 @@ if (isset($_POST['send'])) {
 
   </div>
 </body>
+
 </html>

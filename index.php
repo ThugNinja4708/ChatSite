@@ -9,12 +9,25 @@
       window.history.replaceState(null, null, window.location.href);
     }
   </script>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+  </style>
+
 </head>
 
 <body>
+  <?php if (isset($_GET['error'])) : ?>
+    <p><?php echo $_GET['error']; ?></p>
+  <?php endif ?>
   <div class="everything">
     <header class="Center"><a href="home.php"><img src="logo.png" alt="logo" width="250px" height="70px"></a></header>
-    
+
 
     <form method="POST" action="verify.php">
 
@@ -42,10 +55,11 @@
 
   </div>
 </body>
-  <?php
-  if($_GET){
+<?php
+
+if (isset($_GET['flag'])) {
   if ($_GET['flag'] == false) {
-      echo'<script src = "JavaScript.js">
+    echo '<script src = "JavaScript.js">
       </script>
       <script>
       change();
@@ -53,5 +67,6 @@
       ';
   }
 }
-  ?>
+?>
+
 </html>

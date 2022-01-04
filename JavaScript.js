@@ -9,7 +9,8 @@ var a = document.getElementsByClassName("msg")[c].innerHTML;
 }
 function change(){
     var x = document.getElementsByName("username");
-    x[0].setAttribute("style", "background-color: rgb(192, 28, 28);");
+    x[0].setAttribute("style", "background-color: rgb(212, 83, 78);");
     x = document.getElementsByName("pass");
-    x[0].setAttribute("style", "background-color: rgb(192, 28, 28);");
+    x[0].setAttribute("style", "background-color: rgb(212, 83, 78);");
 }
+
